@@ -1,0 +1,7 @@
+shapely
+Pillow
+tqdm
+python-dotenv
+requests
+oauthlib
+requests-oauthlib

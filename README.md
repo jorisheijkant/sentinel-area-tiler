@@ -11,7 +11,7 @@ Verder heb je om de beelden binnen te halen een _API key/login_ nodig van de Sen
 ## De scripts 
 Met `fetch_area.py` kun je een gebied binnenhalen via de Sentinel Hub API. Let op de volgende variabelen:
 - `area_name` bepaalt hoe je bestanden worden opgeslagen etc. 
-- `area_bounding_box` is de _bounding box_ van het gebied dat je binnen wilt halen. Gebruik hiervoor het format `[oost, zuid, west, noord]` in EPSG:4326-formaat.
+- `area_bounding_box` is de _bounding box_ van het gebied dat je binnen wilt halen. Gebruik hiervoor het format `[west, zuid, oost, noord]` in EPSG:4326-formaat.
 - `tile_size_in_meters` is het formaat van een enkele satelliettegel _in meters_, voor zowel de breedte als de hoogte. Let op: maak dit getal niet te klein of je krijgt een enorm aantal afbeeldingen (1 miljoen is de max hier). 
 - `tile_overlap_in_meters` is de overlap van de tegels in meters. Dit wil zeggen dat de code elke tegel zo verschuift dat de stukjes met deze lengte aan de rand bij _beide tegels_ worden meegenomen. Wil je bijvoorbeeld schepen analyseren, dan heb je hiermee minder kans op een "afgeknipt" schip. 
 
